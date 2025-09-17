@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECOM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">ECOM</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="don.html" id="donButton">Faire un don</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <h2>Agir aujourd’hui pour un avenir meilleur</h2>
+      <p>ECOM soutient les communautés vulnérables avec des actions concrètes et mesurables.</p>
+      <a href="#don" class="btn">Faire un don</a>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos" class="about">
+    <div class="container">
+      <h2>À propos de nous</h2>
+      <p>Nous travaillons pour améliorer la santé, l’éducation et le bien-être des communautés en Côte d’Ivoire et au-delà.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Mission</h3>
+          <p>Apporter un impact réel et durable dans les communautés vulnérables.</p>
+        </div>
+        <div class="card">
+          <h3>Vision</h3>
+          <p>Un monde où chaque individu a accès aux ressources essentielles pour vivre dignement.</p>
+        </div>
+        <div class="card">
+          <h3>Valeurs</h3>
+          <p>Solidarité, transparence, efficacité et innovation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="projects">
+    <div class="container">
+      <h2>Nos Projets</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <h3>Projet Santé</h3>
+          <p>Soutien médical et sensibilisation sanitaire.</p>
+        </div>
+        <div class="project-card">
+          <h3>Éducation Jeunesse</h3>
+          <p>Programmes éducatifs pour enfants et jeunes.</p>
+        </div>
+        <div class="project-card">
+          <h3>Actions Solidaires</h3>
+          <p>Distribution de nourriture et aide d’urgence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULAIRE DON -->
+  <section id="don" class="donate">
+    <div class="container">
+      <h2>Faire un don</h2>
+      <p>Votre contribution permet de financer nos projets et aider ceux qui en ont besoin.</p>
+      <form id="donForm">
+        <input type="text" name="nom" placeholder="Nom complet" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="number" name="montant" placeholder="Montant (FCFA)" required>
+        <button type="submit">Envoyer</button>
+      </form>
+      <p id="message"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 ECOM - Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

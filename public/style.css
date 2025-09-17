@@ -1,0 +1,304 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo texte */
+.logo {
+  font-size: 2em;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: black;
+  color: white;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* espace entre logo et menu */
+  padding: 10px 0;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  align-items: center;
+ 
+  margin-left: 160px; /* ici tu peux changer la valeur à ton goût */
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px; /* espacement entre les liens */
+  list-style: none;
+  /* ===========================
+     Ajuster le décalage des liens individuellement
+     Modifie margin-left si tu veux pousser les liens plus à droite
+  ============================ */
+  margin-left: 10px;
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #c2f0c2;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.nav-links li a:hover {
+  color: #c2f0c2;
+}
+
+/* Bouton "Faire un don" */
+#donButton {
+  background-color: #ff9800; /* couleur orange */
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 160px;
+}
+
+/* Effet au survol */
+#donButton:hover {
+  transform: translateY(-3px) scale(1.05); /* léger mouvement et agrandissement */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* ombre pour effet flottant */
+  color: white;
+}
+
+/* BURGER MENU */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: black;
+  border-radius: 2px;
+}
+
+/* HERO */
+.hero {
+  background-color: black;
+    /* Dégradé noir/gris foncé */
+  background: linear-gradient(to bottom, #000000, #4a4a4a 50%, #000000);
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+
+
+.btn {
+  background: #ff9800;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e68900;
+}
+
+/* À PROPOS */
+.about h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PROJETS */
+.projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* DON */
+.donate h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.donate p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #0B5E17;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #094d13;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background: #0B5E17;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .burger {
+    display: flex;
+  }
+  .nav-active {
+    display: flex !important;
+  }
+  .cards, .project-cards {
+    flex-direction: column;
+  }
+}
